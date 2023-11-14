@@ -17,11 +17,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300;1,500&display=swap"
       rel="stylesheet"
     />
-
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/slick.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/main.css" />
   </head>
 
   <body>
@@ -29,10 +31,15 @@
       <div class="container">
         <div class="header__inner">
           <a class="header__logo" href="#">
-            <img class="header__logo-img" src="images/header-logo.png" alt="header-logo"/>
+            <img
+              class="header__logo-img"
+              src="images/header-logo.png"
+              alt="header-logo"
+            />
           </a>
           <a class="header__logo-white" href="#">
-            <img class="header__logo-img"
+            <img
+              class="header__logo-img"
               src="images/header-logo_white.png"
               alt="header-logo_white"
             />
@@ -78,24 +85,72 @@
           </p>
         </div>
 
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
+        <div class="slider__main-wrapper">
+          <div class="retush__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide retush__slider-item">
+                <img
+                  src="images/01.jpg"
+                  alt="portret-1"
+                  class="retush__slider-img"
+                />
+              </div>
+
+              <div class="swiper-slide retush__slider-item">
+                <img
+                  src="images/08.jpg"
+                  alt="portret-1"
+                  class="retush__slider-img"
+                />
+              </div>
+
+              <div class="swiper-slide retush__slider-item">
+                <img
+                  src="images/15.jpg"
+                  alt="portret-1"
+                  class="retush__slider-img"
+                />
+              </div>
+
+              <div class="swiper-slide retush__slider-item">
+                <img
+                  src="images/16.jpg"
+                  alt="portret-1"
+                  class="retush__slider-img"
+                />
+              </div>
+
+              <div class="swiper-slide retush__slider-item">
+                <img
+                  src="images/17.jpg"
+                  alt="portret-1"
+                  class="retush__slider-img"
+                />
+              </div>
+
+              <div class="swiper-slide retush__slider-item">
+                <img
+                  src="images/18.jpg"
+                  alt="portret-1"
+                  class="retush__slider-img"
+                />
+              </div>
+            </div>            
           </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination slider__dots"></div>
 
-          <!-- If we need scrollbar -->
-          <div class="swiper-scrollbar"></div>
+          <div class="slider__button swiper-button-left">
+            <img
+              src="images/arrow-prev.svg"
+              alt="arrow-prev"
+              class="button__img"
+            />
+          </div>
+          <div class="slider__button swiper-button-right">
+            <img src="images/arrow-next.svg" alt="arrow-next" class="button__img"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -113,13 +168,15 @@
         </div>
         <div class="beliyfon__inner">
           <div class="beliyfon__item">
-            <img class="beliyfon__item-img"
+            <img
+              class="beliyfon__item-img"
               src="images/beliyfon-1.jpg"
               alt="beliyfon-1"
             />
           </div>
           <div class="beliyfon__item">
-            <img class="beliyfon__item-img"
+            <img
+              class="beliyfon__item-img"
               src="images/beliyfon-8.jpg"
               alt="beliyfon-8"
             />
@@ -467,8 +524,7 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/slick.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
