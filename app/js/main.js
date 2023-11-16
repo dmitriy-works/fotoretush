@@ -20,3 +20,24 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
+const socialnetwork__swiper = new Swiper('.socialnetwork__swiper', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  loop: true,
+
+  
+  pagination: {
+    el: '.socialnetwork__pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.socialnetwork-button-right',
+    prevEl: '.socialnetwork-button-left',
+  },
+
+  
+});
