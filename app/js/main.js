@@ -3,6 +3,20 @@ const swiper = new Swiper('.swiper', {
   spaceBetween: 30,
   loop: true,
 
+  breakpoints: {      
+     
+    320: {
+      slidesPerView: 1,     
+    },
+    
+     
+    992: {
+      slidesPerView: 2,      
+    }     
+  },
+
+  
+
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
@@ -27,6 +41,18 @@ const socialnetwork__swiper = new Swiper('.socialnetwork__swiper', {
   spaceBetween: 30,
   loop: true,
 
+  breakpoints: {      
+     
+    320: {
+      slidesPerView: 1,     
+    },
+    
+     
+    992: {
+      slidesPerView: 2,      
+    }     
+  },
+
   
   pagination: {
     el: '.socialnetwork__pagination',
@@ -44,13 +70,16 @@ const menuBtn = document.querySelector('.burger__menu');
 const menu = document.querySelector('.menu__list');
 const logoWhite = document.querySelector('.header__logo-white');
 const logoBlack = document.querySelector('.header__logo');
-const burgerMenu = document.querySelector('.burger__span');
+const burgerMenuWhite = document.querySelector('.burger__menu-white');
+const telWhite = document.querySelector('.header__contacts-phone');
+console.log(telWhite)
 
 menuBtn.addEventListener('click', () => {
   menu.classList.toggle('menu__list--active');
   logoWhite.classList.toggle('logo__active');
   logoBlack.classList.toggle('logo__black--active');
-  burgerMenu.classList.toggle('burger__span--active');
+  burgerMenuWhite.classList.toggle('.burger__menu-white--active');
+  telWhite.classList.toggle('phoneColor--active');
 });
 
 
